@@ -2,6 +2,7 @@ import React from 'react'//llamando a la libreria react
 import Header from '../template/Header'
 import { Apiurl } from '../services/apirest'
 import axios from 'axios'
+import Footer from '../template/Footer'
 
 class Dashboard extends React.Component { //para heredar la clase de react.component
 
@@ -56,6 +57,7 @@ class Dashboard extends React.Component { //para heredar la clase de react.compo
                         </tbody>
                     </table>
                 </div>
+                <Footer></Footer>
             </React.Fragment>
         );
     }

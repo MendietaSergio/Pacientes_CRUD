@@ -1,12 +1,18 @@
 import React from 'react'//llamando a la libreria react
 //CSS
 import '../assetss/css/Login.css'
+import '../assetss/css/footer.css'
+
 //IMG
 import Logo from '../assetss/img/favicon.ico'
 //SERVICIOS
 import { Apiurl } from '../services/apirest';
 //LIBRERIAS
 import axios from 'axios';
+//TEMPLATE
+import Header from '../template/Header'
+import Footer from '../template/Footer'
+
 class Login extends React.Component { //para heredar la clase de react.component
     //para que podamos usar props en todas las clases
     constructor(props){
@@ -63,6 +69,7 @@ class Login extends React.Component { //para heredar la clase de react.component
     render() {//retorna todos los elementos html, al elemento principal
         return (//siempre retorna un solo elemento, por eso debe ir todo dentro de un div
             <React.Fragment>
+                <Header></Header>
                 <div className="wrapper fadeInDown">
                     <div id="formContent">
                         <div className="fadeIn first">
@@ -84,6 +91,7 @@ class Login extends React.Component { //para heredar la clase de react.component
 
                     </div>
                 </div>
+                <Footer></Footer>
             </React.Fragment>
         );
     }

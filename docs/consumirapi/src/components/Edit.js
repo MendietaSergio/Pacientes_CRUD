@@ -4,6 +4,7 @@ import React from 'react'//llamando a la libreria react
 import { Apiurl } from '../services/apirest';
 //template
 import Header from '../template/Header'
+import Footer from '../template/Footer'
 //CSS
 import '../assetss/css/Edit.css'
 class Edit extends React.Component { //para heredar la clase de react.component
@@ -33,6 +34,23 @@ class Edit extends React.Component { //para heredar la clase de react.component
         axios.put(url,this.state.form)
         .then(response =>{
             console.log(response);
+        })
+    }
+    delete = () =>{
+        let url = Apiurl + "pacientes";
+        let pacienteId = this.props.match.params.id;//obtengo el id que nos pasa por parámetros.
+        let datos = {
+            "token": localStorage.getItem("token"),
+            "pacienteId": pacienteId 
+        }
+        console.log(datos);
+        
+        axios.delete(url,{headers:datos})
+        .then(response =>{
+            this.props.history.push("/Dashboard")
+        })
+        .catch(error =>{
+            console.log(error);
         })
     }
     btnSubmit = e =>{
@@ -75,11 +93,10 @@ class Edit extends React.Component { //para heredar la clase de react.component
         return (//siempre retorna un solo elemento, por eso debe ir todo dentro de un div
             <React.Fragment>
                 <Header />
+                
                 <div className="container">
-                    <h3>Editar paciente</h3>
-                </div>
-                <div className="container">
-                    <br />
+                    <h3 className="m-5">Editar paciente</h3>
+                
                     <form className="form-horizontal" onSubmit={this.btnSubmit}>
                         <div className="row">
                             <div className="col-sm-12">
@@ -142,17 +159,14 @@ class Edit extends React.Component { //para heredar la clase de react.component
                                 </div>
                             </div>
                         </div>
-                        <br />
-                        <br />
                         <div className="botones">
                             <button type="submit" className="btn btn-primary" onClick={()=>this.update()}>Editar</button>
-                            <button type="submit" className="btn btn-danger">Eliminar</button>
+                            <button type="submit" className="btn btn-danger" onClick={()=>this.delete()}>Eliminar</button>
                             <a className="btn btn-dark" href="/Dashboard">Salir</a>
                         </div>
-
-
                     </form>
                 </div>
+                <Footer/>
             </React.Fragment>
         );
     }
