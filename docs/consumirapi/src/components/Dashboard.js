@@ -10,7 +10,7 @@ class Dashboard extends React.Component { //para heredar la clase de react.compo
     }
     //funcion para mostrar id seleccionado
     clickPaciente(id){
-        console.log(id);
+        this.props.history.push("/edit/"+id);
     }
     //para mostrar todo lo que esta cargado
     componentDidMount() {
