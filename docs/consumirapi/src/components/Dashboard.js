@@ -31,6 +31,7 @@ class Dashboard extends React.Component { //para heredar la clase de react.compo
                 <div className="container ">
                  <br></br>
                  <br></br>
+                 
                     <table className="table table-hover">
                         <thead>
                             <tr>

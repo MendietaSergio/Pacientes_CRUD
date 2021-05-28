@@ -6,6 +6,7 @@ class Header extends React.Component {
             <nav className="container-fluid navbar navbar-dark bg-dark">
                 <div className="container">
                     <a className="navbar-brand" href="/Dashboard">Lista de Pacientes</a>
+                    
                 </div>
             </nav>
         )

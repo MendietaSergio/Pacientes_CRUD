@@ -80,6 +80,7 @@ class Login extends React.Component { //para heredar la clase de react.component
                             <input type="text" className="fadeIn second" name="usuario" placeholder="login" onChange={this.ingresoInput} />
                             <input type="password" className="fadeIn third" name="password" placeholder="password" onChange={this.ingresoInput} />
                             <input type="submit" className="fadeIn fourth" value="Log In" onClick={this.btnRedireccion} />
+                            <a type="button" href="/Register">Registrarse</a>
                         </form>
                         {//renderizado tradicional
                         this.state.error === true && //, si es igual a true => hace tal cosa
