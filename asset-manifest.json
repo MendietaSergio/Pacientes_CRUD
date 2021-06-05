@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Pacientes_CRUD/static/css/main.58f17d90.chunk.css",
+    "main.js": "/Pacientes_CRUD/static/js/main.73142bd9.chunk.js",
+    "main.js.map": "/Pacientes_CRUD/static/js/main.73142bd9.chunk.js.map",
+    "runtime-main.js": "/Pacientes_CRUD/static/js/runtime-main.3fbb4f56.js",
+    "runtime-main.js.map": "/Pacientes_CRUD/static/js/runtime-main.3fbb4f56.js.map",
+    "static/css/2.4f8976c6.chunk.css": "/Pacientes_CRUD/static/css/2.4f8976c6.chunk.css",
+    "static/js/2.05b44617.chunk.js": "/Pacientes_CRUD/static/js/2.05b44617.chunk.js",
+    "static/js/2.05b44617.chunk.js.map": "/Pacientes_CRUD/static/js/2.05b44617.chunk.js.map",
+    "index.html": "/Pacientes_CRUD/index.html",
+    "static/css/2.4f8976c6.chunk.css.map": "/Pacientes_CRUD/static/css/2.4f8976c6.chunk.css.map",
+    "static/css/main.58f17d90.chunk.css.map": "/Pacientes_CRUD/static/css/main.58f17d90.chunk.css.map",
+    "static/js/2.05b44617.chunk.js.LICENSE.txt": "/Pacientes_CRUD/static/js/2.05b44617.chunk.js.LICENSE.txt",
+    "static/media/favicon.4fe75d5f.ico": "/Pacientes_CRUD/static/media/favicon.4fe75d5f.ico"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fbb4f56.js",
+    "static/css/2.4f8976c6.chunk.css",
+    "static/js/2.05b44617.chunk.js",
+    "static/css/main.58f17d90.chunk.css",
+    "static/js/main.73142bd9.chunk.js"
+  ]
+}
