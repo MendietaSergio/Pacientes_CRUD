@@ -1,7 +1,7 @@
 import './assetss/css/App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import Login from './components/Login'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'//importo desde react-router-dom y cambio BrowserRouter por Router
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'//importo desde react-router-dom y cambio BrowserRouter por Router
 import React from 'react';
 import Dashboard from './components/Dashboard';
 import New from './components/New';
@@ -12,7 +12,7 @@ import Register from './components/Register'
 function App() {
   return (
     <React.Fragment>{/*etiqueda de react*/}
-      <Router basename="/">
+      <Router>
         <Switch>
           {/* //Rutas */}
           <Route path="/" exact render={props => (<Login {...props} />)}>{/*path="/"==> direccion origen exact=>>> para que coincidan exactamente.*/}</Route>          
