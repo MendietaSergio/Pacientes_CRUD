@@ -12,7 +12,7 @@ import Register from './components/Register'
 function App() {
   return (
     <React.Fragment>{/*etiqueda de react*/}
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/">
         <Switch>
           {/* //Rutas */}
           <Route path="/" exact render={props => (<Login {...props} />)}>{/*path="/"==> direccion origen exact=>>> para que coincidan exactamente.*/}</Route>          
