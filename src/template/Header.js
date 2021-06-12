@@ -1,11 +1,12 @@
 import React from 'react';
+import Router from 'next/router'
 
 class Header extends React.Component {
     render() {
         return (
             <nav className="container-fluid navbar navbar-dark bg-dark">
                 <div className="container">
-                    <a className="navbar-brand" href="/Dashboard">Lista de Pacientes</a>
+                    <div className="navbar-brand" onClick={()=> Router.back()}>Lista de Pacientes</div>
                     
                 </div>
             </nav>
