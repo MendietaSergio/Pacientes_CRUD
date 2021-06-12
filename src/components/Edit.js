@@ -162,7 +162,8 @@ class Edit extends React.Component { //para heredar la clase de react.component
                         <div className="botones">
                             <button type="submit" className="btn btn-primary" onClick={()=>this.update()}>Editar</button>
                             <button type="submit" className="btn btn-danger" onClick={()=>this.delete()}>Eliminar</button>
-                            <a className="btn btn-dark" href="Pacientes_CRUD/#/Dashboard">Salir</a>
+            
+                            <a className="btn btn-dark" onClick={()=> this.props.history.push("/Dashboard")}>Salir</a>
                         </div>
                     </form>
                 </div>
